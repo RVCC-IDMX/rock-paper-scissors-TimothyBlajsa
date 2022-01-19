@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 
     <style>
+        #result {}
 
-        #result {
+        #bid {
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
 
-        }
-        #bid{
-            border:1px solid black;
-            margin:20px;
-            padding:20px;
-            text-align:center;
-        }
         #bid h1 {
-            padding:0px;
-            margin:0px;
-            padding-bottom:20px;
-        }
-        #choices {
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding:auto;
-        }
-        button {
-            font-size:20px;
-            font-family:Georgia;
-            padding:20px;
+            padding: 0px;
+            margin: 0px;
+            padding-bottom: 20px;
         }
 
+        #choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: auto;
+        }
+
+        button {
+            font-size: 20px;
+            font-family: Georgia;
+            padding: 20px;
+        }
     </style>
 
 </head>
+
 <body>
 
     <div id="result">
@@ -88,9 +90,9 @@
 
         function rockPaperScissors(humanChoice) {
 
-            
+
             var choiceName = ["Rock", "Paper", "Scissors"];
-            
+
             //var playerChoice = choiceName[Math.floor(Math.random() * choiceName.length)];
             //var choiceName;
             //STEP 1:
@@ -98,7 +100,7 @@
             //1 is rock
             //2 is paper
             //3 is scissors
-            var computerChoice = choiceName[dice(3)-1];
+            var computerChoice = choiceName[dice(3) - 1];
 
             var playerChoice = humanChoice;
             //STEP 2:
@@ -108,35 +110,36 @@
 
             //This boolean value represents if the human won
             var humanWins = false;
-            if (computerChoice === "Rock" && playerChoice === "Paper"){
+            if (computerChoice === "Rock" && playerChoice === "Paper") {
                 humanWins = true;
             }
-            if (computerChoice === "Paper" && playerChoice === "Scissors"){
+            if (computerChoice === "Paper" && playerChoice === "Scissors") {
                 humanWins = true;
             }
-            if (computerChoice === "Scissors" && playerChoice === "Rock"){
+            if (computerChoice === "Scissors" && playerChoice === "Rock") {
                 humanWins = true;
             }
 
             //This boolean value represents if there's a tie
             var tied = false;
-            if (computerChoice === playerChoice){
+            if (computerChoice === playerChoice) {
                 tied = true;
             }
 
+            //This boolean value represents if the computer won
             var computerWins = !humanWins;
 
+            //This if statement tree determines the string output of the end result
             var result;
-            if (humanWins === true){
+            if (humanWins === true) {
                 result = "Win";
             }
-            if (computerWins === true){
+            if (computerWins === true) {
                 result = "Lose";
             }
             if (tied === true) {
                 result = "Tie";
             }
-
 
             //STEP 3:
             //Build a string to display the results of the game
@@ -146,15 +149,16 @@
             //    b) What the computer chose
             //    c) Whether you won or not
             //You may need if statements somewhere around this task
+
             var end = "Player: " + humanChoice + " Computer: " + computerChoice + " result: " + result;
-            
+
             //STEP 4:
             //Reach out into the DOM with getElementById() and insert the end into the result div.
             document.getElementById("result").innerHTML = end;
-            
+
         }
 
-        //This code links in the Rock button so that when it's clicked it fires off the game.
+        //This code links in the choice button so that when it's clicked it fires off the game.
         document.getElementById("rock").onclick = () => {
             rockPaperScissors("Rock");
         };
@@ -170,6 +174,7 @@
 
 
     </script>
-    
+
 </body>
+
 </html>
