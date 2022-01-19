@@ -84,27 +84,59 @@
             3) Displays the play of the game
             
         */
+
+
         function rockPaperScissors(humanChoice) {
 
-            var choiceName = ["Rock","Paper","Scissors"];
-
+            
+            var choiceName = ["Rock", "Paper", "Scissors"];
+            
+            //var playerChoice = choiceName[Math.floor(Math.random() * choiceName.length)];
+            //var choiceName;
             //STEP 1:
             //Determine a random choice for the computer
             //1 is rock
             //2 is paper
             //3 is scissors
-            var computerChoice;
+            var computerChoice = choiceName[dice(3)-1];
 
-            //This boolean value represents if the human won
-            var humanWins = false;
-
-            //This boolean value represents if there's a tie
-            var tied = false;
-
+            var playerChoice = humanChoice;
             //STEP 2:
             //Check to see who won and set humanWins & tied
             //You'll need to build additional if statements
-            if () {}
+            //if () {}
+
+            //This boolean value represents if the human won
+            var humanWins = false;
+            if (computerChoice === "Rock" && playerChoice === "Paper"){
+                humanWins = true;
+            }
+            if (computerChoice === "Paper" && playerChoice === "Scissors"){
+                humanWins = true;
+            }
+            if (computerChoice === "Scissors" && playerChoice === "Rock"){
+                humanWins = true;
+            }
+
+            //This boolean value represents if there's a tie
+            var tied = false;
+            if (computerChoice === playerChoice){
+                tied = true;
+            }
+
+            var computerWins = !humanWins;
+
+            var result;
+            if (humanWins === true){
+                result = "Win";
+            }
+            if (computerWins === true){
+                result = "Lose";
+            }
+            if (tied === true) {
+                result = "Tie";
+            }
+
 
             //STEP 3:
             //Build a string to display the results of the game
@@ -114,16 +146,23 @@
             //    b) What the computer chose
             //    c) Whether you won or not
             //You may need if statements somewhere around this task
-            var end;
-
+            var end = "Player: " + humanChoice + " Computer: " + computerChoice + " result: " + result;
+            
             //STEP 4:
             //Reach out into the DOM with getElementById() and insert the end into the result div.
-
+            document.getElementById("result").innerHTML = end;
+            
         }
 
         //This code links in the Rock button so that when it's clicked it fires off the game.
         document.getElementById("rock").onclick = () => {
-            rockPaperScissors(1);
+            rockPaperScissors("Rock");
+        };
+        document.getElementById("paper").onclick = () => {
+            rockPaperScissors("Paper");
+        };
+        document.getElementById("scissors").onclick = () => {
+            rockPaperScissors("Scissors");
         };
 
         //STEP 5:
