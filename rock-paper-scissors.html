@@ -7,10 +7,13 @@
     <title>Rock Paper Scissors</title>
 
     <style>
-        #result {}
+        #result {
+            text-align: center;
+            font-family: monospace;
+
+        }
 
         #bid {
-            border: 1px solid black;
             margin: 20px;
             padding: 20px;
             text-align: center;
@@ -19,7 +22,7 @@
         #bid h1 {
             padding: 0px;
             margin: 0px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
         }
 
         #choices {
@@ -30,8 +33,11 @@
 
         button {
             font-size: 20px;
-            font-family: Georgia;
+            font-family: monospace;
             padding: 20px;
+            border-radius: 25px;
+            border:none;
+            box-shadow: 20px 20px 60px #bebebe, -30px -30px 60px #ffffff;
         }
     </style>
 
@@ -150,7 +156,7 @@
             //    c) Whether you won or not
             //You may need if statements somewhere around this task
 
-            var end = "Player: " + humanChoice + " Computer: " + computerChoice + " result: " + result;
+            var end = "Player: " + humanChoice + " " + " Computer: " + computerChoice + " " + " Result: " + result;
 
             //STEP 4:
             //Reach out into the DOM with getElementById() and insert the end into the result div.
