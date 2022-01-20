@@ -29,8 +29,7 @@ function rockPaperScissors(humanChoice) {
     //Human input based on event listeners
     var playerChoice = humanChoice;
 
-    //Game outcomes
-
+    //Game OUTCOME
     //This boolean value represents if the human won
     var humanWins = false;
     if (computerChoice === "Rock" && playerChoice === "Paper") {
@@ -52,6 +51,7 @@ function rockPaperScissors(humanChoice) {
     //This boolean value represents if the computer won
     var computerWins = !humanWins;
 
+    //Game AFFORDANCE
     //This if statement tree determines the string output of the end result
     var result;
     if (humanWins === true) {
@@ -71,7 +71,6 @@ function rockPaperScissors(humanChoice) {
     //End result string
     var end = "Player: " + humanChoice + " " + " Computer: " + computerChoice + " " + " Result: " + result;
 
-    //STEP 4:
     //Reach out into the DOM with getElementById() and insert the end into the result div.
     document.getElementById("result").innerHTML = end;
 
@@ -87,6 +86,3 @@ document.getElementById("paper").onclick = () => {
 document.getElementById("scissors").onclick = () => {
     rockPaperScissors("Scissors");
 };
-
-//STEP 5:
-//Below, link up the other two buttons with an EventListener so that the user can click on them and activate the game.
