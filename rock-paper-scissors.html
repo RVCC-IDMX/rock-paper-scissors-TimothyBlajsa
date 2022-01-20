@@ -7,10 +7,25 @@
     <title>Rock Paper Scissors</title>
 
     <style>
+
+        @keyframes resultAffordance {
+            from {background-color:white;}
+            to {background:black;}
+        }
+
         #result {
             text-align: center;
             font-family: monospace;
+            font-size:large;
+            animation-name: resultAffordance;
+            animation-duration:4s;
+        }
 
+        #result:before {
+            transition:.5s;
+        }
+        #result:after {
+            transition:.5s;
         }
 
         #bid {
@@ -157,12 +172,15 @@
             var result;
             if (humanWins === true) {
                 result = "Win";
+                document.getElementById("result").style.color = "green";
             }
             if (computerWins === true) {
                 result = "Lose";
+                document.getElementById("result").style.color = "red";
             }
             if (tied === true) {
                 result = "Tie";
+                document.getElementById("result").style.color = 'blue';
             }
 
             //STEP 3:
