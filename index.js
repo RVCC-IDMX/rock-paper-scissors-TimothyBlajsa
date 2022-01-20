@@ -17,26 +17,19 @@ function dice(sides) {
     
 */
 
-
 function rockPaperScissors(humanChoice) {
 
-
+    //Game CHOICES
+    //Array of game choices
     var choiceName = ["Rock", "Paper", "Scissors"];
 
-    //var playerChoice = choiceName[Math.floor(Math.random() * choiceName.length)];
-    //var choiceName;
-    //STEP 1:
     //Determine a random choice for the computer
-    //1 is rock
-    //2 is paper
-    //3 is scissors
     var computerChoice = choiceName[dice(3) - 1];
 
+    //Human input based on event listeners
     var playerChoice = humanChoice;
-    //STEP 2:
-    //Check to see who won and set humanWins & tied
-    //You'll need to build additional if statements
-    //if () {}
+
+    //Game outcomes
 
     //This boolean value represents if the human won
     var humanWins = false;
@@ -74,15 +67,8 @@ function rockPaperScissors(humanChoice) {
         document.getElementById("result").style.color = 'blue';
     }
 
-    //STEP 3:
-    //Build a string to display the results of the game
-    //Put it in the end variable
-    //It should include:
-    //    a) What you chose
-    //    b) What the computer chose
-    //    c) Whether you won or not
-    //You may need if statements somewhere around this task
-
+    //Game END
+    //End result string
     var end = "Player: " + humanChoice + " " + " Computer: " + computerChoice + " " + " Result: " + result;
 
     //STEP 4:
