@@ -11,10 +11,10 @@ Both the player and computer choices, alongside the results of the game are prin
 
 [Github Logo](https://www.flaticon.com/search?word=github&type=icon)
 
-[Rock Hand](https://www.flaticon.com/search?word=fist%20hand&order_by=4&type=icon)
+[Rock Hand](https://emojipedia.org/raised-fist/)
 
-[Paper Hand](https://www.flaticon.com/free-icon/open-hands_3179232?term=open%20hand&page=1&position=3&page=1&position=3&related_id=3179232&origin=search)
+[Paper Hand](https://emojipedia.org/raised-hand/)
 
-[Scissors Hand](https://www.flaticon.com/search?word=scissors%20hand&order_by=4&type=icon)
+[Scissors Hand](https://emojipedia.org/victory-hand/)
 
 [Assignment](https://www.youtube.com/embed/zFF5A_Wfjfc)
