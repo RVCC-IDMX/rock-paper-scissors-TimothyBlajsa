@@ -9,4 +9,6 @@ Both the player and computer choices, alongside the results of the game are prin
 ## Sources
 [Favicon](https://www.flaticon.com/free-icon/rock-paper-scissors_4144475#)
 
+[Github Logo](https://www.flaticon.com/search?word=github&type=icon)
+
 [Assignment](https://www.youtube.com/embed/zFF5A_Wfjfc)
