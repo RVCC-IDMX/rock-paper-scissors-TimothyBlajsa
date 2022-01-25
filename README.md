@@ -20,6 +20,8 @@ In addition, the player is accompanied by classical music while they play!
 
 [Github Logo](https://www.flaticon.com/search?word=github&type=icon)
 
+[Cat](https://www.flaticon.com/free-icons/cat)
+
 [Rock Hand](https://emojipedia.org/raised-fist/)
 
 [Paper Hand](https://emojipedia.org/raised-hand/)
