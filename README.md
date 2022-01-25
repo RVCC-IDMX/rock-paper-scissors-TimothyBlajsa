@@ -12,6 +12,8 @@ Each button features a custom cursor corresponding to the type of button that it
 The page itself includes a Github logo linked to the creator's page!
 
 In addition, the player is accompanied by classical music while they play!
+
+*Make sure to check out the custom 404*
 ## Sources
 ### Images
 [Favicon](https://www.flaticon.com/free-icon/rock-paper-scissors_4144475#)
