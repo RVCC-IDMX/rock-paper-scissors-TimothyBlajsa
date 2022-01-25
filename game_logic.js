@@ -1,3 +1,12 @@
+//Audio event listener
+let audio = document.createElement("audio");
+audio.autoplay = true;
+audio.src = "music.mp3";
+
+document.addEventListener("mousemove", () => {
+    audio.play();
+})
+
 function dice(sides) {
     return Math.ceil(Math.random() * sides);
 }
