@@ -22,3 +22,5 @@ The page itself includes a Github logo linked to the creator's page!
 [Scissors Hand](https://emojipedia.org/victory-hand/)
 
 [Assignment](https://www.youtube.com/embed/zFF5A_Wfjfc)
+
+[Play The Game](https://blajsa-roshambo.netlify.app)
