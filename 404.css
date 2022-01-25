@@ -5,4 +5,5 @@
 
 .cat {
     padding-left: 25rem;
+    border-bottom: 5px solid black;
 }
