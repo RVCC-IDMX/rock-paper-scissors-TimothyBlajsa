@@ -8,6 +8,8 @@ The buttons feature active styling of a color change, smoothly transitioning ove
 Both the player and computer choices, alongside the results of the game are printed at the top of the page at the end of each round; as an affordance that something has happened, the text is color matched to the outcome - green:win, red:lose, blue:tie.
 
 Each button features a custom cursor corresponding to the type of button that it is!
+
+The page itself includes a Github logo linked to the creator's page!
 ## Sources
 [Favicon](https://www.flaticon.com/free-icon/rock-paper-scissors_4144475#)
 
