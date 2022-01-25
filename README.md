@@ -11,6 +11,7 @@ Each button features a custom cursor corresponding to the type of button that it
 
 The page itself includes a Github logo linked to the creator's page!
 ## Sources
+### Images
 [Favicon](https://www.flaticon.com/free-icon/rock-paper-scissors_4144475#)
 
 [Github Logo](https://www.flaticon.com/search?word=github&type=icon)
@@ -21,8 +22,10 @@ The page itself includes a Github logo linked to the creator's page!
 
 [Scissors Hand](https://emojipedia.org/victory-hand/)
 
+### Audio
 [Music - Way To Silence by Sergey Cheremisinov](https://freemusicarchive.org/music/Sergey_Cheremisinov#contact-artist)
 
+### The Game
 [Assignment](https://www.youtube.com/embed/zFF5A_Wfjfc)
 
 [Play The Game](https://blajsa-roshambo.netlify.app)
